@@ -6,7 +6,8 @@ abstract class Employer {
     abstract void shift();
     abstract double calculSalaire();
     public String toString(){
-        String str = "Je suis un employé qui travaille à "+this.getClass()+"\nJe m'appelle "+this.nom;
+        String str = "\t\temployé à "+getClass()+"\nnom: "+this.nom+"\nâge: "+this.age+"\nheure de travail:"+this.h+"H" +
+                "\nslaire: "+this.calculSalaire();
         return str;
     }
 }
